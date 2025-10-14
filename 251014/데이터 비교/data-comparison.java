@@ -20,15 +20,15 @@ public class Main {
         for (int a1 : arr1)
             set1.add(a1);        
         // 수열 2의 원소가 수열 1에 존재하면 1, 없으면 0
-        String answer = "";
+        StringBuilder answer = new StringBuilder(arr2.length * 2);
         for (int a2 : arr2) {
             if(set1.contains(a2)){
-                answer = new StringBuilder(answer).append("1 ").toString();
+                answer.append("1 ");
             } else {
-                answer = new StringBuilder(answer).append("0 ").toString();
+                answer.append("0 ");
             }
         }
 
-        System.out.println(answer);
+        System.out.println(answer.toString());
     }
 }
