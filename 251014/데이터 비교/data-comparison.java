@@ -16,7 +16,6 @@ public class Main {
         }
         // Please write your code here.
         HashSet<Integer> set1 = new HashSet<>();
-        HashSet<Integer> set2 = new HashSet<>();
 
         for (int a1 : arr1)
             set1.add(a1);        
